@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'nav nav nav nav'
+                         'header header header header'
+                         'section section section section'
+                         'footer footer footer footer';
+ grid-template-rows: 30vh 500vh 40vh 20vh;
+}
+
+nav{
+    grid-area: nav;
+    background-color: aqua;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+}
+
+section{
+    grid-area: section;
+    background-color: blueviolet;
+}
+ 
+footer{
+
+    grid-area: footer;
+    background-color: blue;
+}
+
+
+@media(min-width: 768px){
+    body {
+        grid-template-areas: 'nav nav nav nav'
+                             'header header section section'
+                             'header header section section'
+                             'footer footer footer footer';
+    }
+
+@media(min-width: 1024px){
+    body{
+        grid-template-areas: 'nav nav section section'
+        'nav nav section section'
+        'header header footer footer'
+        'header header footer footer';
+    }
+}
+
+
+
+
+
+}
